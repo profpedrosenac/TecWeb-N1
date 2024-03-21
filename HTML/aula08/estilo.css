@@ -1,0 +1,51 @@
+body{
+    font-family: arial;
+    margin: 0px;
+}
+
+#topo{
+    height: 199px;
+    width: 1300px;
+    background-color: #BCB2FF;
+    padding-top: 1px;
+}
+.centroDivs{
+    margin: auto;
+}
+#menu{
+    height: 70px;
+    width: 1300px;
+    background-color: #B2C4FF;
+}
+#banner{
+    height: 500px;
+    width: 1300px;
+    background-color: #FFB2FF;
+}
+#cont{
+    height: 599px;
+    width: 1300px;
+    background-color: #BCB2FF;
+    padding-top: 1px;
+}
+#rodape{    
+    height: 200px;
+    width: 1300px;
+    background-color:#B2C4FF;
+}
+
+#logo{
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    margin-top: 25px;
+}
+.contItem{
+    background-color: white;
+    height: 580px;
+    width: 420px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    border-radius: 20px;
+}

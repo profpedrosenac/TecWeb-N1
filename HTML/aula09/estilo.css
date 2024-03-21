@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+}
+#topo{
+    height: 499px;
+    background-color: blue;
+    padding-top: 1px;
+}
+#itemTopo{
+    width: 1366px;
+    margin: auto;
+    margin-top: 50px;
+}
+#logo{
+    width: 300px;
+    height: 180px;
+    background-color: aqua;
+    float: left;
+}
+#menu{
+    width: 1056px;
+    height: 180px;
+    background-color: aqua;
+    float: right;
+}
+#carinha{
+    height: 210px;
+    background-color: blanchedalmond;
+    margin-top: 10px;
+}
+.limpar{
+    clear: both;
+}
+.cont{
+    height: 300px;
+    width: 1366px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 10px;
+}
+#rodape1{
+    height: 400px;
+    margin-top: 10px;
+    background-color: blue;
+}
+#rodape2{
+    height: 150px;
+    margin-top: 10px;
+    background-color: blue;
+    padding-top: 1px;
+}
+.itemTexto{
+    width: 846px;
+    height: 280px;
+    margin: 10px;
+    background-color: #a390bd;
+    float: left;
+}
+.itemImg{
+    width: 500px;
+    height: 300px;
+    background-color: #a390bd;
+    float: left;
+}
+.itemRodape{
+    width: 1366px;
+    margin: auto;
+    margin-top: 38px;
+}
+
+.social{
+    height: 75px;
+    width: 75px;
+    background-color: #b897c0;
+    margin-left: 10px;
+    float: right;
+}
+.endereco{
+    width: 1186px;
+    height: 75px;
+    float: left;
+    background-color: #b897c0;
+}
+.itemMenu{
+    width: 1036px;
+    margin: auto;
+    margin-top: 56px;
+}
+.btoMenu{
+    width: 200px;
+    height: 75px;
+    background-color: #b897c0;
+    float: left;
+    margin-right: 10px;
+}

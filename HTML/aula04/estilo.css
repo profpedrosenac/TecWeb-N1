@@ -1,0 +1,11 @@
+body{
+    font-family: arial;
+    background-color: lightgray;
+}
+
+.quadradinho{
+    list-style-type: square;
+}
+.romano{
+    list-style-type: lower-roman;
+}
