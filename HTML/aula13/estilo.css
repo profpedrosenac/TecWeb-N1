@@ -1,0 +1,57 @@
+body{
+    font-family: arial;
+}
+
+.bla{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30pt;
+    position: absolute;
+    border-radius: 20px;
+}
+#model1{
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+}
+#model2{
+    top: 20px;
+    right: 20px;
+}
+#model3{
+    bottom: 20px;
+    left: 20px;
+}
+#model4{
+    bottom: 20px;
+    right: 20px;
+}
+#model5{
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#total
+{
+    width: 1000px;
+    height: 2000px;
+    background-color: darkgrey;
+    margin: auto;
+    position: relative;
+}
+
+#joaquim{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
