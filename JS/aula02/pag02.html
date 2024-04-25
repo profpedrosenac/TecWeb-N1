@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <hr>
+    <p>
+        <label for="txtN1">Número 1</label>
+        <input type="text" name="" id="txtN1">
+    </p>
+    <p>
+        <label for="txtN2">Número 2</label>
+        <input type="text" name="" id="txtN2">
+    </p>
+    <p id="result">0</p>
+    <p> 
+        <button onclick="Mais()">+</button>
+        <button onclick="">-</button>
+        <button onclick="">x</button>
+        <button onclick="">:</button>
+        <button onclick="">Média</button>
+    </p>
+
+    <script>
+        const n1 = document.getElementById('txtN1')
+        const n2 = document.getElementById('txtN2')
+        const localResult = document.getElementById('result')
+        let result = 0
+        
+        function Mais()
+        {
+            result = parseFloat(n1.value) + parseFloat(n2.value)
+            localResult.innerHTML = result
+        }
+
+    </script>
+</body>
+</html>

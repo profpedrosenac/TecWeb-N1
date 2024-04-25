@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Atividade</h1>
+    <p>
+        <label for="txtNome">Nome</label>
+    </p>
+    <p>
+        <input type="text" id="txtNome">
+    </p>
+    <p>
+        <label for="txtSobrenome">Sobrenome</label>
+    </p>
+    <p>
+        <input type="text" id="txtSobrenome">
+    </p>
+    <p>
+        <label for="txtIdade">Idade</label>
+    </p>
+    <p>
+        <input type="text" id="txtIdade">
+    </p>
+    <p>
+        <button onclick="OK()">OK</button>
+    </p>
+    <div id="result"></div>
+
+    <script>
+        function OK()
+        {
+            console.log("teste")
+            document.getElementById("result").innerHTML = 
+                "Nome completo: " + 
+                    document.getElementById('txtNome').value + " " +
+                    document.getElementById('txtSobrenome').value + 
+                " com " + document.getElementById('txtIdade').value + ' anos.'
+        }
+    </script>
+</body>
+</html>

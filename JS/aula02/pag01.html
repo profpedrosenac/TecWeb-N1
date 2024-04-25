@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <p>
+        <label for="txtNome">Informe seu nome</label>
+    </p>
+    <p>
+        <input type="text" id="txtNome">
+    </p>
+    <p>
+        <label for="txtSobrenome">Informe seu Sobrenome</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtSobrenome">
+    </p>
+    <p>
+        <label for="txtIdade">Informe sua idade</label>
+    </p>
+    <p>
+        <input type="number" name="" id="txtIdade">
+    </p>
+    <p>
+        <button onclick="OK()">OK</button>
+    </p>
+    <div id="result"></div>
+
+    <script>
+
+        let nome = document.getElementById('txtNome')
+        let sobrenome = document.getElementById('txtSobrenome')
+        let idade = document.getElementById('txtIdade')
+        let resultado = document.getElementById('result')
+
+        function OK()
+        {
+            console.log("Apertei o OK")
+
+            resultado.innerHTML = "Nome completo " + nome.value + " " + sobrenome.value + " com " + idade.value + " anos."
+
+            nome.value = ""
+            sobrenome.value = ""
+            idade.value = ""
+        }
+
+    </script>
+</body>
+</html>

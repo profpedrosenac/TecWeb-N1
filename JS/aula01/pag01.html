@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução a JS</h1>
+    <p id="texto01"></p>
+    <p id="texto02"></p>
+
+    <hr>
+    <label for="txtNome">Informe seu nome</label>
+    <input type="text" id="txtNome">
+    <button onclick="Executar()">Ok</button>
+    
+    <hr>
+    <p>
+        <label for="txtNome2">Nome 2</label>
+        <input type="text" name="" id="txtNome2">
+    </p>
+    <p>
+        <label for="txtSobrenome">Sobrenome</label>
+        <input type="text" name="" id="txtSobrenome">
+    </p>
+    <p>
+        <button onclick="Concat()">OK2</button>
+    </p>
+   
+   
+    
+    <script>
+        document.getElementById("texto01").innerHTML = '<i>Olá Mundo!</i>'
+        document.getElementById("texto02").innerText = '<i>Olá Mundo!</i>'
+
+        function Executar()
+        {
+            console.log(document.getElementById('txtNome').value)
+        }
+
+        function Concat()
+        {
+            console.log(
+                document.getElementById('txtNome2').value + ' ' +
+                document.getElementById('txtSobrenome').value
+            )
+        }
+    </script>
+</body>
+</html>

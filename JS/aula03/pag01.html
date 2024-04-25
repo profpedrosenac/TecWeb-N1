@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <hr>
+    <p>
+        <label for="txtN1">Informe N1</label>
+    </p>
+    <p>
+        <input type="number" name="" id="txtN1">
+    </p>
+    <p>
+        <label for="txtN2">Informe N2</label>
+    </p>
+    <p>
+        <input type="number" name="" id="txtN2">
+    </p>
+    <p>
+        <button onclick="Mais()">+</button>
+        <button onclick="Menos()">-</button>
+        <button onclick="Mult()">X</button>
+        <button onclick="Divisao()">:</button>
+        <button onclick="Media()">Média</button>
+        <button onclick="Limpar()">CE</button>
+    </p>
+    <hr>
+    <p id="result">0</p>
+    <hr>
+    <script>
+        const n1 = document.getElementById('txtN1')
+        const n2 = document.getElementById('txtN2')
+        const result = document.getElementById('result')
+        let total = 0
+
+        function Mais(){
+            console.log('Apertou no Mais')
+            total = parseFloat(n1.value) + parseFloat(n2.value)
+            result.innerHTML = total
+        }
+        function Menos(){
+            console.log('Apertou no Menos')
+            total = parseFloat(n1.value) - parseFloat(n2.value)
+            result.innerHTML = total
+        }
+        function Mult(){
+            console.log('Apertou no Mult')
+            total = parseFloat(n1.value) * parseFloat(n2.value)
+            result.innerHTML = total
+        }
+        function Divisao(){
+            console.log('Apertou no Divisao')
+            total = parseFloat(n1.value) / parseFloat(n2.value) 
+            result.innerHTML = total           
+        }
+        function Limpar(){
+            n1.value = ""
+            n2.value = ""
+            result.innerHTML = "0"
+        }
+        function Media(){
+            total = (parseFloat(n1.value) + parseFloat(n2.value)) / 2
+            result.innerHTML = total 
+        }
+    </script>
+</body>
+</html>
