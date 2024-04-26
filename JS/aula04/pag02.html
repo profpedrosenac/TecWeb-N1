@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <form action="" class="form-control" onsubmit="return false">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Compras</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>
+                        <label for="txtProduto">Produto</label>
+                    </p>
+                    <p>
+                        <input type="text" name="" id="txtProduto" class="form-control">
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <label for="txtValor">Valor</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtValor" class="form-control" step="0.01">
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <label for="txtQtde">Qtde</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtQtde" class="form-control">
+                    </p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-end">                    
+                    <button id="btoLimpar" onclick="Limpar()" class="btn btn-danger">Limpar</button>
+                    <button id="btoOK" onclick="Calcular()" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <div id="result">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const produto = document.getElementById('txtProduto')
+        const qtde = document.getElementById('txtQtde')
+        const valor = document.getElementById('txtValor')
+        const resultado = document.getElementById('result')
+        let total = 0
+
+        function Calcular(){
+            
+            total = parseFloat(qtde.value) * parseFloat(valor.value)
+            //console.log(total)
+            resultado.innerHTML = "Total da compra: " + total
+        }
+    </script>
+</body>
+</html>

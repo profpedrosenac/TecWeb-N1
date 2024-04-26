@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <form action="" class="form-control" onsubmit="return false">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Média</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>
+                        <label for="txtN1">N1</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtN1" class="form-control">
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p>
+                        <label for="txtN2">N2</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtN2" class="form-control">
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p>
+                        <label for="txtN3">N3</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtN3" class="form-control">
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <p>
+                        <label for="txtN4">N4</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtN4" class="form-control">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-end">                    
+                    <button id="btoLimpar" onclick="Limpar()" class="btn btn-danger">Limpar</button>
+                    <button id="btoOK" onclick="Media()" class="btn btn-primary">Média</button>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <div id="result">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const n1 = document.getElementById('txtN1')
+        const n2 = document.getElementById('txtN2')
+        const n3 = document.getElementById('txtN3')
+        const n4 = document.getElementById('txtN4')
+        const resultado = document.getElementById('result')
+        let media = 0
+
+        function Limpar(){
+            n1.value = ""
+            n2.value = ""
+            n3.value = ""
+            n4.value = ""
+            resultado.innerHTML = "0"
+        }
+
+        function Media(){
+            media = (parseFloat(n1.value) + parseFloat(n2.value) + parseFloat(n3.value) + parseFloat(n4.value)) / 4
+
+            resultado.innerHTML = media
+        }
+    </script>
+</body>
+</html>

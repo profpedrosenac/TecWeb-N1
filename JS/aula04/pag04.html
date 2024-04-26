@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <form action="" class="form-control" onsubmit="return false">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Dívidas</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>
+                        <label for="txtValor">Dívida</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtValor" class="form-control" step="0.01">
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                        <label for="txtJuros">Juros %</label>
+                    </p>
+                    <p>
+                        <input type="number" name="" id="txtJuros" class="form-control">
+                    </p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-end">                    
+                    <button id="btoLimpar" onclick="Limpar()" class="btn btn-danger">Limpar</button>
+                    <button id="btoOK" onclick="Calcular()" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <div id="result" class="p-4 tamanhoFonte3">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const valor = document.getElementById("txtValor")
+        const juros = document.getElementById("txtJuros")
+        const resultado = document.getElementById("result")
+        let total = 0
+
+        function Calcular(){
+            total = parseFloat(valor.value) + ((parseFloat(valor.value) * parseFloat(juros.value))/100)
+
+            //console.log(total)
+            
+            resultado.innerHTML = 'Dívida: R$'+valor.value+' <br> Juros: '+juros.value+'% <br> Total a pagar: R$ ' + total
+        }
+        
+    </script>
+</body>
+</html>

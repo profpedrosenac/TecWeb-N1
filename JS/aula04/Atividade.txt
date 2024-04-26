@@ -1,0 +1,12 @@
+Atividade 1
+B1 - Leia Grau Celsius e imprima em Fahrenheit
+B2 - Leia Grau Fahrenheit e imprima em Fahrenheit Celsius
+
+Atividade 2
+Ler qtde comprada, valor,
+B1 - imprima o valor total
+B2 - imprima o valor com 15% de desconto
+B3 - imprima o valor com 23% de juros
+
+Desafio
+Leia valor A, Valor B e Valor C, imprima X1 e X2 do bhaskara

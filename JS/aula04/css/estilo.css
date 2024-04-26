@@ -1,0 +1,14 @@
+#result{
+    height: 200px;
+    background-color: bisque;
+    border-radius: 10px;
+    
+}
+.tamanhoFonte2{
+    text-align: center;
+    font-size: 18pt;
+    line-height: 200px;
+}
+.tamanhoFonte3{
+    font-size: 18pt;
+}
