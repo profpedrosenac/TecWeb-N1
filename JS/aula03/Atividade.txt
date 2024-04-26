@@ -1,0 +1,16 @@
+Atividade 01
+Ler 4 valores numéricos e imprimir a média desses valores
+
+Atividade 02
+Ler Nome do produto, Valor unitário, Qtde comprada.
+Imprimir total da compra
+
+Atividade 03
+Ler nome do funcionário, Salário Bruto, total de desconto em folha (Reais)
+Imprima o salário Líquido
+
+Desafio
+Criar um sistema que leia Valor de uma dívida, a porcentagem de juros e imprima da seguinte forma:
+  Dívida: R$ _____
+  Juros: ___%
+  Total a pagar: R$ _____
