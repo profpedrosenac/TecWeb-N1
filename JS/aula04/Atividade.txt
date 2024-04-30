@@ -1,7 +1,8 @@
 Atividade 1
 B1 - Leia Grau Celsius e imprima em Fahrenheit
+	(°C × 9/5) + 32
 B2 - Leia Grau Fahrenheit e imprima em Fahrenheit Celsius
-
+	(°F − 32) × 5/9
 Atividade 2
 Ler qtde comprada, valor,
 B1 - imprima o valor total
@@ -10,3 +11,6 @@ B3 - imprima o valor com 23% de juros
 
 Desafio
 Leia valor A, Valor B e Valor C, imprima X1 e X2 do bhaskara
+ ** Math.sqrt(x) ==> Raiz quadrada
+ ** Math.pow(x, y) ==> potência
+ **** Dica, estudar o objeto Math (Métodos de Matemática)

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bhaskara</h1>
+    <hr>
+    <p>
+        <label for="txtA">A</label>
+    </p>
+    <p>
+        <input type="number" name="" id="txtA">
+    </p>
+    <p>
+        <label for="txtB">B</label>
+    </p>
+    <p>
+        <input type="number" name="" id="txtB">
+    </p>
+    <p>
+        <label for="txtC">C</label>
+    </p>
+    <p>
+        <input type="number" name="" id="txtC">
+    </p>
+    <p>
+        <button onclick="OK()">Calcular</button>
+    </p>
+    <hr>
+    <p id="result">X1=0<br>X2=0</p>
+    <hr>
+    <script>        
+        const r = document.getElementById('result')
+        let delta = 0
+        let x1 = 0
+        let x2 = 0
+
+        function OK(){
+            let a = parseFloat(document.getElementById('txtA').value)
+            let b = parseFloat(document.getElementById('txtB').value)
+            let c = parseFloat(document.getElementById('txtC').value)
+
+            // delta = b² - 4ac
+            delta = Math.pow(b,2) - (4 * a * c)
+            console.log(delta)
+
+            // x1 = (-b + raiz(delta)) / (2a)
+            x1 = (-b + Math.sqrt(delta)) / (2 * a)
+
+            // x2 = (-b - raiz(delta)) / (2a)
+            x2 = (-b - Math.sqrt(delta)) / (2 * a)
+
+            console.log("x1: " + x1)
+            console.log("x2: " + x2)
+
+            r.innerHTML = "x1 = " + x1 + "<br> x2 = " + x2
+        }
+    </script>
+</body>
+</html>

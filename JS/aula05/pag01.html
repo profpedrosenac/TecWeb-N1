@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label for="txtN1">Informe o valor  numérico</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtN1">
+    </p>
+    <p>
+        <button onclick="ConverteC()">Celsius</button>
+        <button onclick="ConverteF()">Fahrenheit</button>
+    </p>
+    <p id="result">0</p>
+    <script>
+        const n1 = document.getElementById('txtN1')
+        const resultado = document.getElementById('result')
+        let total = 0
+
+        //°C=(°F − 32) × 5/9
+        function ConverteC(){
+            total = (parseFloat(n1.value) - 32) * (5/9)
+            resultado.innerHTML = total + "°C"
+        }
+        //°F=(°C × 9/5) + 32
+        function ConverteF(){
+            total = (parseFloat(n1.value) * 9/5) + 32
+            resultado.innerHTML = total + "°F"
+        }
+    </script>
+</body>
+</html>
