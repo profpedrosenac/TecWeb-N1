@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label for="txtPalavra">Informe a palavra secreta</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtPalavra">
+    </p>
+    <p>
+        <button onclick="OK()">Ok</button>
+    </p>
+    <hr>
+    <p id="result"></p>
+    <hr>
+
+    <script>
+        const r = document.getElementById('result')
+
+        function OK()
+        {
+            let palavra = document.getElementById('txtPalavra').value
+
+            if (palavra == "Pedro Legal") {
+                r.innerHTML = "Palavra verdadeira, mais do que legal =D"
+            } else {
+                r.innerHTML = "Errouuuuuu!"
+            }
+        }
+
+    </script>
+</body>
+</html>

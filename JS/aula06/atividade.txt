@@ -1,0 +1,20 @@
+= --> atribuição
+
+==
+>
+<
+>=
+<=
+!=
+
+Atividade 1
+Fábrica de bolos, Ler peso do bolo
+menor do 3 kg - Produto de venda
+maior ou igual 3kg - voltar para fábrica
+
+Atividade 2
+Ler 2 números e imprima o valor que é maior
+
+Atividade 3
+Ler valor de uma venda, imprima o valor da comissão:
+Valor venda maior ou igual à 5000, 6% comissão, vendas menores do que 5000 3,5% de comissão em cima da venda
