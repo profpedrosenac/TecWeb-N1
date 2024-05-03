@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .azul{color: blue;}
+        .vermelho{color: red;}
+        .laranja{color: orange;}
+    </style>
+</head>
+<body>
+    <p>
+        <label for="txtN1">N1</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtN1">
+    </p>
+    <p>
+        <label for="txtN2">N2</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtN2">
+    </p>
+    <p>
+        <label for="txtN3">N3</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtN3">
+    </p>
+    <p>
+        <label for="txtN4">N4</label>
+    </p>
+    <p>
+        <input type="text" name="" id="txtN4">
+    </p>
+    <p>
+        <button onclick="OK()">OK</button>
+    </p>
+    <hr>
+    <p id="result">-</p>
+    <hr>
+
+    <script>
+
+        const result = document.getElementById('result')
+        
+        function OK(){
+            let n1 = parseFloat(document.getElementById("txtN1").value)
+            let n2 = parseFloat(document.getElementById("txtN2").value)
+            let n3 = parseFloat(document.getElementById("txtN3").value)
+            let n4 = parseFloat(document.getElementById("txtN4").value)
+            let media = 0
+
+            // criando validação
+
+            if (n1 > 10) {
+                alert("Erro, N1 deve ser menor do que 10")
+                document.getElementById('txtN1').value = ""
+                document.getElementById('txtN1').focus()
+                result.innerHTML = "-"
+                return
+            }
+            if (n1 < 0) {
+                alert("Erro, N1 deve ser maior do que 0")
+                document.getElementById('txtN1').value = ""
+                document.getElementById('txtN1').focus()
+                result.innerHTML = "-"
+                return
+            }
+
+            media = (n1 + n2 + n3 + n4) / 4
+
+            if (media >=7) {
+                result.innerHTML = '<span class="azul">APROVADO - '+ media +'</span>'
+            } else if(media <= 5) {
+                result.innerHTML = '<span class="vermelho">REPROVADO - '+ media +'</span>'
+            } else {
+                result.innerHTML = '<span class="laranja">EXAME - '+ media +'</span>'
+            }
+        }
+    </script>
+</body>
+</html>

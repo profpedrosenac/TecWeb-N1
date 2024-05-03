@@ -1,0 +1,16 @@
+Ex. 01
+Ler 2 valores e imprimir qual o maior, caso forem iguais imprimir: "Os valores são iguais" (vermelho)
+
+Atividade 1
+Ler 4 notas e imprimir a média escolar e seu status
+Aprovado (azul) = média maior ou igual à 7
+Reprovado (vermelho) = média menor do que 5
+Exame (laranja) = média maior ou igual à 5 e menor do que 7
+
+Atividade 2
+Empresa de cartão de crédito necessita classificar os clientes com base em seu ganho.
+0000 - 1500 - Classe Bronze (Laranja)
+1500 - 3000 - Classe Prata (Cinza)
+3000 - 6500 - Classe Ouro (Fundo preto e texto amarelo em negrito)
+6500 - 9000 - Classe Platina (Vermelho negrito)
+ acima 9000 - Classe VIP (Fundo preto e texto branco negrito e itálico)
