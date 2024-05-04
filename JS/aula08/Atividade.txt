@@ -1,0 +1,16 @@
+Atividade 2
+Empresa de cartão de crédito necessita classificar os clientes com base em seu ganho.
+0000 - 1500 - Classe Bronze (Laranja)
+1500 - 3000 - Classe Prata (Cinza)
+3000 - 6500 - Classe Ouro (Fundo preto e texto amarelo em negrito)
+6500 - 9000 - Classe Platina (Vermelho negrito)
+ acima 9000 - Classe VIP (Fundo preto e texto branco negrito e itálico)
+
+Atividade 3
+IMC, ler altura e peso, imprima o IMC e o seu status com base na tabela:
+Abaixo de 18,5 - Abaixo do Peso
+entre 18,6 e 24,9 - Peso ideal (parabéns)
+entre 25 e 29,9 - Levemente acima do peso
+entre 30 e 34,9 - Obesidade Grau I
+entre 35 e 39,9 - Obesidade Grau II (Severa)
+acima de 40 - Obesidade Grau III (mórbida)
