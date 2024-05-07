@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label for="txtN1">Informe o valor:</label>
+        <input type="text" name="" id="txtN1">
+    </p>
+    <p><button onclick="OK()">Ok</button></p>
+    <p id="result">-</p>
+    <script>
+        function OK(){
+            let n1 = parseFloat(document.getElementById('txtN1').value)
+            const result = document.getElementById('result')
+
+            if (n1 <0 || n1 >200) {
+                result.innerHTML = 'ERRRRROOOOOOOOOOO!'
+                return
+            }
+
+            if (n1 >=50 && n1 <= 100) {
+                result.innerHTML = 'O valor está entre 50 e 100'
+            } else {
+                result.innerHTML = 'O valor está fora do escopo'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+\\10.37.40.191\fac-turmas\Publica\_InstaladorTeams
+Aula Invertida (ReactJs)
+
+- conceito
+- Boas Práticas
+- Como funciona o mercado
+
+- Tutorial de instalação
+ (NodeJs)
+ (ReactJs)
+
+- ambiente de configuração (tutorial)
+
+- Construir em ReactJs um site de no mínimo 5 páginas
+- TOPO, RODAPE, MENU, Conteúdo
